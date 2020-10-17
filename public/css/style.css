@@ -1,0 +1,21 @@
+.card-lesson ul {
+}
+
+/**
+    Icons take from https://www.flaticon.com/free-icon/backpack_3232323?term=school%20backpack&page=1&position=7
+*/
+.card-lesson ul li {
+    margin-bottom: 15px;
+}
+.card-lesson ul li.details-student {
+	list-style-image: url("/icon/backpack.png");
+}
+.card-lesson ul li.details-teacher {
+	list-style-image: url("/icon/graduation-hat-and-diploma.png");
+}
+.card-lesson ul li.details-planning {
+	list-style-image: url("/icon/calendar.png");
+}
+.card-lesson ul li.details-time-slot {
+	list-style-image: url("/icon/clock.png");
+}

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LessonsController!{% endblock %}
+
+{% block body %}
+{# I use the grid system from boostrap : https://getbootstrap.com/docs/4.0/layout/grid/#how-it-works #}
+{# I use the spacing utility for make the content away from navbar : https://getbootstrap.com/docs/4.0/utilities/spacing/ #}
+<div class="container pt-5">
+
+    {# I use the following card from bootstrap : https://getbootstrap.com/docs/4.0/components/card/#using-custom-css #}
+    {# I sue the card group from bootstrap : https://getbootstrap.com/docs/4.5/components/card/#card-groups #}
+    <div class="row row-cols-1 row-cols-md-2">
+    {% for lesson in lessons %}
+        <div class="col mb-4">
+            <div class="card card-lesson">
+                <div class="card-body">
+                    <h5 class="card-title">{{ lesson.title }}</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li class="details-student"> {{ lesson.teacher.name }} </li>
+                            {# https://twig.symfony.com/doc/2.x/filters/join.html #}
+                            <li class="details-planning"> {{ lesson.frequency.when_day | join(', ') }} </li>
+                            <li class="details-time-slot"> {{ lesson.time_slot }} </li>
+                            <li class="details-teacher"> {{ lesson.teacher.name }} </li>
+                        </ul>
+                    </p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary">Détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+</div>
+{% endblock %}
