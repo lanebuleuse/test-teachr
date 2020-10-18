@@ -27,7 +27,7 @@ class LessonsController extends AbstractController
                     'frequency' => [
                         'when_day' => ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
                         'start_date' => 'Samedi 3 octobre',
-                        'next_lesson_data' => 'Aujourdh\'ui',
+                        'next_lesson_date' => 'aujourd\'hui',
                         'duration' => '1h30/Jour',
                     ], 
                 ],
@@ -43,7 +43,7 @@ class LessonsController extends AbstractController
                     'frequency' => [
                         'when_day' => ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
                         'start_date' => 'Samedi 3 octobre',
-                        'next_lesson_data' => 'Aujourdh\'ui',
+                        'next_lesson_date' => 'aujourd\'hui',
                         'duration' => '1h30/Jour',
                     ], 
                 ],
@@ -59,7 +59,7 @@ class LessonsController extends AbstractController
                     'frequency' => [
                         'when_day' => ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
                         'start_date' => 'Samedi 3 octobre',
-                        'next_lesson_data' => 'Aujourdh\'ui',
+                        'next_lesson_date' => 'aujourd\'hui',
                         'duration' => '1h30/Jour',
                     ], 
                 ],
@@ -75,7 +75,7 @@ class LessonsController extends AbstractController
                     'frequency' => [
                         'when_day' => ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
                         'start_date' => 'Samedi 3 octobre',
-                        'next_lesson_data' => 'Aujourdh\'ui',
+                        'next_lesson_date' => 'aujourd\'hui',
                         'duration' => '1h30/Jour',
                     ], 
                 ],

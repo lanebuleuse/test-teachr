@@ -15,12 +15,21 @@
             <div class="card card-lesson">
                 <div class="card-body">
                     <h5 class="card-title">{{ lesson.title }}</h5>
+                    <h4 class="card-subtitle">Prochain cours: {{ lesson.frequency.next_lesson_date }}</h5>
                     <p class="card-text">
                         <ul>
                             <li class="details-student"> {{ lesson.teacher.name }} </li>
                             {# https://twig.symfony.com/doc/2.x/filters/join.html #}
-                            <li class="details-planning"> {{ lesson.frequency.when_day | join(', ') }} </li>
-                            <li class="details-time-slot"> {{ lesson.time_slot }} </li>
+                            <li class="details-planning"> 
+                                <div>{{ lesson.frequency.when_day | join(', ') }}</div>
+                                {# https://getbootstrap.com/docs/4.0/utilities/colors/#color #}
+                                <span class="text-secondary">A partir du {{ lesson.frequency.start_date }}</span>
+                            </li>
+                            <li class="details-time-slot">
+                                <div>{{ lesson.frequency.duration }}</div>
+                                {# https://getbootstrap.com/docs/4.0/utilities/colors/#color #}
+                                <span class="text-secondary">{{ lesson.time_slot }} </span>
+                             </li>
                             <li class="details-teacher"> {{ lesson.teacher.name }} </li>
                         </ul>
                     </p>

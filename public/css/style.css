@@ -5,7 +5,7 @@
     Icons take from https://www.flaticon.com/free-icon/backpack_3232323?term=school%20backpack&page=1&position=7
 */
 .card-lesson ul li {
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 .card-lesson ul li.details-student {
 	list-style-image: url("/icon/backpack.png");
