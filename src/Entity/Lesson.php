@@ -22,6 +22,24 @@ class Lesson
      */
     private $title;
 
+        /**
+     * @ORM\ManyToOne(targetEntity=Teacher::class)
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $teacher;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Student::class)
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $student;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Frequency::class)
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $frequency;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -35,6 +53,42 @@ class Lesson
     public function setTitle(string $title): self
     {
         $this->title = $title;
+
+        return $this;
+    }
+
+    public function getTeacher(): ?Teacher
+    {
+        return $this->teacher;
+    }
+
+    public function setTeacher(?Teacher $teacher): self
+    {
+        $this->teacher = $teacher;
+
+        return $this;
+    }
+
+    public function getStudent(): ?Student
+    {
+        return $this->student;
+    }
+
+    public function setStudent(?Student $student): self
+    {
+        $this->student = $student;
+
+        return $this;
+    }
+
+    public function getFrequency(): ?Frequency
+    {
+        return $this->frequency;
+    }
+
+    public function setFrequency(?Frequency $frequency): self
+    {
+        $this->frequency = $frequency;
 
         return $this;
     }
