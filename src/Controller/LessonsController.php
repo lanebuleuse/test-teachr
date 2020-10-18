@@ -23,10 +23,9 @@ class LessonsController extends AbstractController
                     'teacher' => [
                         'name' => 'Rodolphe',
                     ],
-                    'time_slot' => 'A partir de 14h38',
                     'frequency' => [
                         'when_day' => ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
-                        'start_date' => 'Samedi 3 octobre',
+                        'start_date' => new \DateTime(),
                         'next_lesson_date' => 'aujourd\'hui',
                         'duration' => '1h30/Jour',
                     ], 
@@ -39,10 +38,9 @@ class LessonsController extends AbstractController
                     'teacher' => [
                         'name' => 'Rodolphe',
                     ],
-                    'time_slot' => 'A partir de 14h38',
                     'frequency' => [
                         'when_day' => ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
-                        'start_date' => 'Samedi 3 octobre',
+                        'start_date' => new \DateTime(),
                         'next_lesson_date' => 'aujourd\'hui',
                         'duration' => '1h30/Jour',
                     ], 
@@ -55,10 +53,9 @@ class LessonsController extends AbstractController
                     'teacher' => [
                         'name' => 'Rodolphe',
                     ],
-                    'time_slot' => 'A partir de 14h38',
                     'frequency' => [
                         'when_day' => ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
-                        'start_date' => 'Samedi 3 octobre',
+                        'start_date' => new \DateTime(),
                         'next_lesson_date' => 'aujourd\'hui',
                         'duration' => '1h30/Jour',
                     ], 
@@ -71,10 +68,9 @@ class LessonsController extends AbstractController
                     'teacher' => [
                         'name' => 'Rodolphe',
                     ],
-                    'time_slot' => 'A partir de 14h38',
                     'frequency' => [
                         'when_day' => ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
-                        'start_date' => 'Samedi 3 octobre',
+                        'start_date' => new \DateTime(),
                         'next_lesson_date' => 'aujourd\'hui',
                         'duration' => '1h30/Jour',
                     ], 
