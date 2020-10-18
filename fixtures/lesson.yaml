@@ -1,0 +1,21 @@
+App\Entity\Lesson:
+  lesson_1:
+      title: Cours régulier de philosophie
+      student: "@student_thomas"
+      teacher: "@teacher_rodolphe"
+      frequency: "@frequency_1"
+  lesson_2:
+    title: Cours régulier de science et vie de la terre
+    student: "@student_thomas"
+    teacher: "@teacher_rodolphe"
+    frequency: "@frequency_1"
+  lesson_3:
+    title: Cours régulier de mathématique
+    student: "@student_thomas"
+    teacher: "@teacher_rodolphe"
+    frequency: "@frequency_1"
+  lesson_4:
+    title: Cours régulier d'histoire
+    student: "@student_thomas"
+    teacher: "@teacher_rodolphe"
+    frequency: "@frequency_1"

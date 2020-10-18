@@ -1,0 +1,3 @@
+App\Entity\Student:
+  student_thomas:
+    name: Thomas

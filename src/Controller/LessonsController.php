@@ -4,14 +4,19 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Repository\LessonRepository;
 
 class LessonsController extends AbstractController
 {
     /**
      * @Route("/my-lessons", name="lessons")
      */
-    public function index()
+    public function index(LessonRepository $repository)
     {
+        return $this->render('lessons/index.html.twig', [
+            'lessons' => $repository->findAll(),
+        ]);
+        
         return $this->render('lessons/index.html.twig', [
             // informations from model :
             'lessons' => [

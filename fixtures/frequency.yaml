@@ -1,0 +1,6 @@
+App\Entity\Frequency:
+  frequency_1:
+    whenDay: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
+    startDate: <(new DateTime("2020-10-03 14:30:00"))>
+    nextLesson: "Aujourd'hui"
+    duration: '1h30/jour'
